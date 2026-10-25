@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const userRouter = require("./routes/user");
 
 const app = express();
-const PORT = 8009;
+const PORT = 3000;
 
 // Parse incoming request bodies
 app.use(express.json());
