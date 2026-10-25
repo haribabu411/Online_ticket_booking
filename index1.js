@@ -15,10 +15,8 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Server is running" });
 });
 
-// Register API routes
 app.use("/api/users", userRouter);
 
-// Connect to your local MongoDB database
 mongoose
   .connect("mongodb://127.0.0.1:27017/youtubeapp1")
   .then(() => {
